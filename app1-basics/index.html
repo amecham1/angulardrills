@@ -1,6 +1,11 @@
-<html>
-	<body>
-	
+<html ng-app="app3">
+	<body ng-controller="ThreeApp">
+
+		<ul ng-repeat="cats in data">
+			<li>{{cats.car}}</li>
+			<li>{{cats.color}}</li>
+		</ul>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
