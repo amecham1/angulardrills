@@ -1,9 +1,14 @@
-<html>
-	<body>
-	
+<html ng-app="twoOne">
+	<body ng-controller="TwoCtrl">
+
+		<ul>
+			<li ng-repeat="car in data">{{car.car}}</li>
+			<li ng-repeat="car in data">{{car.color}}</li>
+		</ul>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
-		<script src="controller.js"></script>
 		<script src="service.js"></script>
+		<script src="controller.js"></script>
 	</body>
 </html>
