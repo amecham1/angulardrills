@@ -3,7 +3,7 @@
 
 <input ng-model="select" placeholder="search cars">
 <!-- <input ng-model="colorfilter" placeholder="search color"> -->
-		<div ng-repeat="veh in data | filter: {car: select, color: select}">
+		<div ng-repeat="veh in data |filter: {car: select}">
         {{veh.car}} {{veh.color}}
 	</div>
 
